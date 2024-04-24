@@ -14,8 +14,8 @@ export async function middleware(req){
     await fetch(webhook,{body:JSON.stringify({
       content: "<@720278340552097812>",
       embeds:[{
-        title:"New mssage read!",
-        description:("**User:** <@"+page.slice(0,500)+">\n**Note:** If someone opens the link, you'll get a response without the user bit."),
+        title:"New message read!",
+        description:("**User:** <@"+page.slice(0,500)+">"),
       }],
     }),headers:{"content-type":"application/json"},method:"POST"})
   }
